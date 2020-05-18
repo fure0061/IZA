@@ -1,4 +1,4 @@
 # IZA
-IZA project
-The Pianino game on swift language
-            See documentation
+IZA project\n
+The Pianino game on swift language\n
+            See documentation\n
