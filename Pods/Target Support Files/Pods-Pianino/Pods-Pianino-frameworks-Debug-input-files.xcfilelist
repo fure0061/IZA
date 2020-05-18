@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Pianino/Pods-Pianino-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework
+${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework
+${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework
