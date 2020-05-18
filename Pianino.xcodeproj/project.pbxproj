@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363898AD2461A5DF00BBC19D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363898AC2461A5DF00BBC19D /* Colors.xcassets */; };
+		363898AF2461A5EE00BBC19D /* DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363898AE2461A5EE00BBC19D /* DispatchQueueHelper.swift */; };
+		363898B12461A65200BBC19D /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 363898B02461A65200BBC19D /* loading.gif */; };
+		363898B32461B8EF00BBC19D /* ca_vut.gif in Resources */ = {isa = PBXBuildFile; fileRef = 363898B22461B8EE00BBC19D /* ca_vut.gif */; };
+		3654B10B246EC90400CEF339 /* secondSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3654B10A246EC90400CEF339 /* secondSound.mp3 */; };
+		3654B10D246EC95400CEF339 /* thirdSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3654B10C246EC95400CEF339 /* thirdSound.wav */; };
+		3654B10F246EC95A00CEF339 /* fourthSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3654B10E246EC95900CEF339 /* fourthSound.wav */; };
+		3654B111246ECAF600CEF339 /* fifthSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3654B110246ECAF600CEF339 /* fifthSound.wav */; };
+		3654B113246ECAFB00CEF339 /* sixthSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3654B112246ECAFB00CEF339 /* sixthSound.wav */; };
+		3654B115246ECB0000CEF339 /* seventhSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3654B114246ECB0000CEF339 /* seventhSound.wav */; };
+		36B6117D245314A6004F5685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B6117C245314A6004F5685 /* AppDelegate.swift */; };
+		36B6117F245314A6004F5685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B6117E245314A6004F5685 /* SceneDelegate.swift */; };
+		36B61181245314A6004F5685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B61180245314A6004F5685 /* ViewController.swift */; };
+		36B61184245314A6004F5685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B61182245314A6004F5685 /* Main.storyboard */; };
+		36B61186245314A8004F5685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B61185245314A8004F5685 /* Assets.xcassets */; };
+		36B61189245314A8004F5685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B61187245314A8004F5685 /* LaunchScreen.storyboard */; };
+		CE26C1B051462E39459BB645 /* Pods_Pianino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E189DEE20691B46AE7B0B94 /* Pods_Pianino.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		363898AC2461A5DF00BBC19D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		363898AE2461A5EE00BBC19D /* DispatchQueueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueHelper.swift; sourceTree = "<group>"; };
+		363898B02461A65200BBC19D /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		363898B22461B8EE00BBC19D /* ca_vut.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ca_vut.gif; sourceTree = "<group>"; };
+		3654B10A246EC90400CEF339 /* secondSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = secondSound.mp3; sourceTree = "<group>"; };
+		3654B10C246EC95400CEF339 /* thirdSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thirdSound.wav; sourceTree = "<group>"; };
+		3654B10E246EC95900CEF339 /* fourthSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fourthSound.wav; sourceTree = "<group>"; };
+		3654B110246ECAF600CEF339 /* fifthSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fifthSound.wav; sourceTree = "<group>"; };
+		3654B112246ECAFB00CEF339 /* sixthSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sixthSound.wav; sourceTree = "<group>"; };
+		3654B114246ECB0000CEF339 /* seventhSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = seventhSound.wav; sourceTree = "<group>"; };
+		36B61179245314A6004F5685 /* Pianino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pianino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B6117C245314A6004F5685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36B6117E245314A6004F5685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		36B61180245314A6004F5685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36B61183245314A6004F5685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36B61185245314A8004F5685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36B61188245314A8004F5685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36B6118A245314A8004F5685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E189DEE20691B46AE7B0B94 /* Pods_Pianino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pianino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		550CDB892000385321070C3A /* Pods-Pianino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pianino.debug.xcconfig"; path = "Target Support Files/Pods-Pianino/Pods-Pianino.debug.xcconfig"; sourceTree = "<group>"; };
+		5903FDD1A8ED0524343F6AF9 /* Pods-Pianino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pianino.release.xcconfig"; path = "Target Support Files/Pods-Pianino/Pods-Pianino.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36B61176245314A6004F5685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE26C1B051462E39459BB645 /* Pods_Pianino.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249D80581D4EE2ACADF411E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				550CDB892000385321070C3A /* Pods-Pianino.debug.xcconfig */,
+				5903FDD1A8ED0524343F6AF9 /* Pods-Pianino.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36B61170245314A6004F5685 = {
+			isa = PBXGroup;
+			children = (
+				36B6117B245314A6004F5685 /* Pianino */,
+				36B6117A245314A6004F5685 /* Products */,
+				249D80581D4EE2ACADF411E7 /* Pods */,
+				46F9AE5901E9F6E2D0B7C1B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36B6117A245314A6004F5685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36B61179245314A6004F5685 /* Pianino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36B6117B245314A6004F5685 /* Pianino */ = {
+			isa = PBXGroup;
+			children = (
+				3654B10A246EC90400CEF339 /* secondSound.mp3 */,
+				3654B10C246EC95400CEF339 /* thirdSound.wav */,
+				3654B10E246EC95900CEF339 /* fourthSound.wav */,
+				3654B110246ECAF600CEF339 /* fifthSound.wav */,
+				3654B112246ECAFB00CEF339 /* sixthSound.wav */,
+				3654B114246ECB0000CEF339 /* seventhSound.wav */,
+				36B6117C245314A6004F5685 /* AppDelegate.swift */,
+				36B6117E245314A6004F5685 /* SceneDelegate.swift */,
+				363898AC2461A5DF00BBC19D /* Colors.xcassets */,
+				363898B02461A65200BBC19D /* loading.gif */,
+				36B61180245314A6004F5685 /* ViewController.swift */,
+				363898B22461B8EE00BBC19D /* ca_vut.gif */,
+				363898AE2461A5EE00BBC19D /* DispatchQueueHelper.swift */,
+				36B61182245314A6004F5685 /* Main.storyboard */,
+				36B61185245314A8004F5685 /* Assets.xcassets */,
+				36B61187245314A8004F5685 /* LaunchScreen.storyboard */,
+				36B6118A245314A8004F5685 /* Info.plist */,
+			);
+			path = Pianino;
+			sourceTree = "<group>";
+		};
+		46F9AE5901E9F6E2D0B7C1B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E189DEE20691B46AE7B0B94 /* Pods_Pianino.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36B61178245314A6004F5685 /* Pianino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B6118D245314A8004F5685 /* Build configuration list for PBXNativeTarget "Pianino" */;
+			buildPhases = (
+				3982C8225B067CEF5CA816E2 /* [CP] Check Pods Manifest.lock */,
+				36B61175245314A6004F5685 /* Sources */,
+				36B61176245314A6004F5685 /* Frameworks */,
+				36B61177245314A6004F5685 /* Resources */,
+				42BAF176BA8DF88400C3E3F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pianino;
+			productName = Pianino;
+			productReference = 36B61179245314A6004F5685 /* Pianino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36B61171245314A6004F5685 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ольга Павлова";
+				TargetAttributes = {
+					36B61178245314A6004F5685 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 36B61174245314A6004F5685 /* Build configuration list for PBXProject "Pianino" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36B61170245314A6004F5685;
+			productRefGroup = 36B6117A245314A6004F5685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36B61178245314A6004F5685 /* Pianino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36B61177245314A6004F5685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B61189245314A8004F5685 /* LaunchScreen.storyboard in Resources */,
+				363898AD2461A5DF00BBC19D /* Colors.xcassets in Resources */,
+				363898B32461B8EF00BBC19D /* ca_vut.gif in Resources */,
+				3654B111246ECAF600CEF339 /* fifthSound.wav in Resources */,
+				363898B12461A65200BBC19D /* loading.gif in Resources */,
+				36B61186245314A8004F5685 /* Assets.xcassets in Resources */,
+				3654B10F246EC95A00CEF339 /* fourthSound.wav in Resources */,
+				3654B10B246EC90400CEF339 /* secondSound.mp3 in Resources */,
+				3654B115246ECB0000CEF339 /* seventhSound.wav in Resources */,
+				3654B10D246EC95400CEF339 /* thirdSound.wav in Resources */,
+				36B61184245314A6004F5685 /* Main.storyboard in Resources */,
+				3654B113246ECAFB00CEF339 /* sixthSound.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3982C8225B067CEF5CA816E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pianino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42BAF176BA8DF88400C3E3F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pianino/Pods-Pianino-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pianino/Pods-Pianino-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pianino/Pods-Pianino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36B61175245314A6004F5685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B61181245314A6004F5685 /* ViewController.swift in Sources */,
+				363898AF2461A5EE00BBC19D /* DispatchQueueHelper.swift in Sources */,
+				36B6117D245314A6004F5685 /* AppDelegate.swift in Sources */,
+				36B6117F245314A6004F5685 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36B61182245314A6004F5685 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B61183245314A6004F5685 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36B61187245314A8004F5685 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B61188245314A8004F5685 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36B6118B245314A8004F5685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36B6118C245314A8004F5685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36B6118E245314A8004F5685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550CDB892000385321070C3A /* Pods-Pianino.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pianino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pianino.Pianino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36B6118F245314A8004F5685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5903FDD1A8ED0524343F6AF9 /* Pods-Pianino.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pianino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pianino.Pianino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36B61174245314A6004F5685 /* Build configuration list for PBXProject "Pianino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B6118B245314A8004F5685 /* Debug */,
+				36B6118C245314A8004F5685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B6118D245314A8004F5685 /* Build configuration list for PBXNativeTarget "Pianino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B6118E245314A8004F5685 /* Debug */,
+				36B6118F245314A8004F5685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36B61171245314A6004F5685 /* Project object */;
+}

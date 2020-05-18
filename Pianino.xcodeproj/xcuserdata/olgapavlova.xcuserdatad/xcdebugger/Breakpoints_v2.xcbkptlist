@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "68AAD14E-5BBD-484F-9B66-9B866934B534"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pianino/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA - 294b134b02d33601"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pianino.ViewController.__deallocating_deinit"
+                  moduleName = "Pianino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgapavlova/Desktop/Raul&apos;s%20project/Pianino/Pianino/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA - 9c2254a6704af0b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pianino.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pianino.ViewController"
+                  moduleName = "Pianino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgapavlova/Desktop/Raul&apos;s%20project/Pianino/Pianino/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA - f1096504d7a7b64d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pianino.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pianino.ViewController"
+                  moduleName = "Pianino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgapavlova/Desktop/Raul&apos;s%20project/Pianino/Pianino/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "947">
+               </Location>
+               <Location
+                  uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA - bb26e637ffaed6d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pianino.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pianino.ViewController&gt;"
+                  moduleName = "Pianino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgapavlova/Desktop/Raul&apos;s%20project/Pianino/Pianino/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "9D7F507D-E502-4632-B152-FBFACA1E14FA - a96dc90c54dee5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pianino.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pianino.ViewController&gt;"
+                  moduleName = "Pianino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgapavlova/Desktop/Raul&apos;s%20project/Pianino/Pianino/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
