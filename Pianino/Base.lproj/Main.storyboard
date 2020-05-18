@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKM-51-fdN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fq5-2s-dGu">
+            <objects>
+                <viewController id="OKM-51-fdN" customClass="ViewController" customModule="Pianino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q8H-PI-mVh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-Zz-shE">
+                                <rect key="frame" x="0.0" y="-134" width="414" height="1164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="First"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gBd-IE-nvG">
+                                <rect key="frame" x="20" y="739" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="61"/>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="eWn-CG-Rny">
+                                        <segue key="commit" inheritsFrom="parent" id="C1p-QY-Uvi"/>
+                                        <segue key="preview" inheritsFrom="commit" id="Vy4-FP-P9z"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="e0w-BH-Ugc">
+                                <rect key="frame" x="27" y="555" width="374" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <state key="normal" title="RESET HIGHSCORE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetHighscore:" destination="OKM-51-fdN" eventType="touchUpInside" id="Jmj-S4-dnQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPg-hx-kxY">
+                                <rect key="frame" x="16" y="44" width="383" height="390"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="118"/>
+                                <state key="normal" title="44444">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="InitButtonHighScore:" destination="OKM-51-fdN" eventType="touchUpInside" id="7dW-7f-Cuf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6d-Zm-kUl">
+                                <rect key="frame" x="0.0" y="456" width="414" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <state key="normal" title="GAME MODE: CLASSIC">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeModebutton:" destination="OKM-51-fdN" eventType="touchUpInside" id="Do2-el-bdq"/>
+                                    <action selector="modeChangebutton:" destination="OKM-51-fdN" eventType="touchUpInside" id="dvO-SO-gka"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="ihU-Lg-apt">
+                                <rect key="frame" x="24" y="646" width="380" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <state key="normal" title="SETTINGS &amp; OTHER">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetHighscore:" destination="OKM-51-fdN" eventType="touchUpInside" id="yLN-cb-haq"/>
+                                    <segue destination="piU-9u-09B" kind="modal" identifier="Second" modalPresentationStyle="pageSheet" id="e69-CC-VhG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="Tp7-X6-srj"/>
+                    </view>
+                    <connections>
+                        <outlet property="InitHighScoreButton" destination="dPg-hx-kxY" id="jmE-7l-yZR"/>
+                        <outlet property="modeChangeoutlet" destination="b6d-Zm-kUl" id="itS-CG-e6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ca-8a-zXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849.27536231884062" y="117.85714285714285"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ybL-sy-WAN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="piU-9u-09B" customClass="ViewController" customModule="Pianino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkQ-Gr-gma">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Second" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-VH-FJm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWG-jZ-nCK">
+                                <rect key="frame" x="331" y="356" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="turnOffthesoundeffects:" destination="piU-9u-09B" eventType="valueChanged" id="Aoj-kY-V4x"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VERSION 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reb-A7-hyZ">
+                                <rect key="frame" x="129" y="679" width="157" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUTHOR: RAUL AGHAYEV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-d2-XoU">
+                                <rect key="frame" x="60" y="642" width="295" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-oZ-ceT">
+                                <rect key="frame" x="47" y="524" width="321" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="rulik-a@mail.ru">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openEmailbutton:" destination="uDc-0i-f5W" eventType="touchUpInside" id="NeZ-EE-Nxe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IN CASE OF ANY PROBLEMS, PLEASE CONTACT: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGW-wT-OpP">
+                                <rect key="frame" x="20" y="516" width="400" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EFFECTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fes-MP-qi3">
+                                <rect key="frame" x="35" y="355" width="128" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8fl-AF-Qx7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="qiI-Pp-BpH">
+                        <barButtonItem key="backBarButtonItem" title="First" image="memories.badge.plus" catalog="system" id="vAU-vB-syH"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="titletoSaveswitcherstate" destination="aWG-jZ-nCK" id="0Rs-Vo-vdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qB-mR-2mW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uDc-0i-f5W" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-849.27536231884062" y="833.70535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pianino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voG-79-yDD" userLabel="Button 1">
+                                <rect key="frame" x="-1" y="745" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JnM-T7-EPF"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="r8O-qt-T5b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLP-bK-GYg" userLabel="Button 2">
+                                <rect key="frame" x="103" y="745" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed2Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QK-kF-WRZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-nB-LHD" userLabel="Button 3">
+                                <rect key="frame" x="207" y="745" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c5v-ln-shD"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="l7U-J3-dO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-o1-80Q" userLabel="Button 4">
+                                <rect key="frame" x="311" y="745" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czi-Ls-pfI"/>
+                                    <segue destination="09Z-EB-HfC" kind="modal" modalPresentationStyle="fullScreen" id="HmK-v7-9wW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH4-cb-piP" userLabel="Button 5">
+                                <rect key="frame" x="-1" y="596" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3g9-xh-Dz0"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="SRn-Dm-L8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM7-uT-W4d" userLabel="Button 6">
+                                <rect key="frame" x="103" y="596" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eB5-sf-zfg"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="qHu-Vy-US0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-kO-1MO" userLabel="Button 7">
+                                <rect key="frame" x="207" y="596" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwj-AL-pWg"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="Znb-zz-yB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-4i-zus" userLabel="Button 8">
+                                <rect key="frame" x="311" y="596" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed8Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uu7-Ve-O16"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-z4-wpP" userLabel="Button 9">
+                                <rect key="frame" x="-1" y="447" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed9Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OzR-vM-3qo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTk-wx-cbf" userLabel="Button 10">
+                                <rect key="frame" x="103" y="447" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jme-bi-eKQ"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="vDl-nb-OnE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-TI-xCY" userLabel="Button 11">
+                                <rect key="frame" x="207" y="447" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaO-bf-Lh4"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="SNC-c1-CMV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGI-ZO-XZ9" userLabel="Button 12">
+                                <rect key="frame" x="310" y="447" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKp-IJ-mE4"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="gjW-qe-RaI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-mk-oRL" userLabel="Button 13">
+                                <rect key="frame" x="-1" y="298" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRh-eb-aRh"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="FBa-tg-2m9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQN-BM-D7y" userLabel="Button 14">
+                                <rect key="frame" x="103" y="298" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvM-d1-rti"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="7Ac-kb-SaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wty-5J-rQv" userLabel="Button 15">
+                                <rect key="frame" x="207" y="298" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed15Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjL-VS-xqZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-FU-VIW" userLabel="Button 16">
+                                <rect key="frame" x="311" y="298" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIh-pC-okG"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="Slx-fj-DlH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-O7-WBI" userLabel="Button 17">
+                                <rect key="frame" x="-1" y="149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zb7-cJ-N4h"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="iFd-t8-MWJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-na-LCj" userLabel="Button 18">
+                                <rect key="frame" x="103" y="149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1C-rg-tAE"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="pX2-f5-0FP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3N-Gt-cAY" userLabel="Button 19">
+                                <rect key="frame" x="207" y="149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVk-W8-Kbq"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="CPB-Ih-moy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaE-Xq-uIG" userLabel="Button 20">
+                                <rect key="frame" x="311" y="149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed20Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nha-G8-J1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-CC-itt" userLabel="Button 21">
+                                <rect key="frame" x="-1" y="0.0" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06f-2x-gst"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="Xez-CO-ZjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-Qk-oXC" userLabel="Button 22">
+                                <rect key="frame" x="103" y="0.0" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRx-BT-JXD"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="y0D-8i-xYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zy-cY-8TT" userLabel="Button 23">
+                                <rect key="frame" x="207" y="0.0" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Pressed23Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qA3-vo-Y6F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNl-rs-ztm" userLabel="Button 24">
+                                <rect key="frame" x="311" y="0.0" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bco-hv-oQJ"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="PhK-ou-6my"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA0-66-sha" userLabel="Button 25">
+                                <rect key="frame" x="-1" y="-149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="gss-Sk-9lM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09x-4V-SMP" userLabel="Button 26">
+                                <rect key="frame" x="103" y="-149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="Black26Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aja-Nd-oNf"/>
+                                    <action selector="Pressed23Black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lug-8R-ZBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0A-CF-AEq" userLabel="Button 27">
+                                <rect key="frame" x="207" y="-149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSt-se-RhI"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="i8X-7u-iSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gA-aE-sfP" userLabel="Button 28">
+                                <rect key="frame" x="311" y="-149" width="104" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ImageForButton"/>
+                                <connections>
+                                    <action selector="ShowGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUV-wm-790"/>
+                                    <segue destination="09Z-EB-HfC" kind="presentation" modalPresentationStyle="fullScreen" id="D4j-Mv-LvS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-nt-qxd">
+                                <rect key="frame" x="2" y="23" width="99" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highest score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-cG-H6o">
+                                <rect key="frame" x="314" y="0.0" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-vk-jmf">
+                                <rect key="frame" x="314" y="23" width="99" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HE-EH-MXC" userLabel="Score:">
+                                <rect key="frame" x="0.0" y="0.0" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49L-lA-LdY" userLabel="Timer">
+                                <rect key="frame" x="-104" y="0.0" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-gT-bBl" userLabel="Timer countDown label">
+                                <rect key="frame" x="-106" y="23" width="99" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="BlackButton15" destination="Wty-5J-rQv" id="ZGy-Vb-GCQ"/>
+                        <outlet property="BlackButton2" destination="rLP-bK-GYg" id="0re-zz-d2d"/>
+                        <outlet property="BlackButton20" destination="xaE-Xq-uIG" id="mjD-Ev-4go"/>
+                        <outlet property="BlackButton23" destination="0zy-cY-8TT" id="SbR-BX-I9v"/>
+                        <outlet property="BlackButton26" destination="09x-4V-SMP" id="EOp-Hn-byt"/>
+                        <outlet property="BlackButton8" destination="wmJ-4i-zus" id="VIg-Y7-Wox"/>
+                        <outlet property="BlackButton9" destination="lvK-z4-wpP" id="ugJ-3U-zDc"/>
+                        <outlet property="HighestScore" destination="gc0-vk-jmf" id="cTo-0g-uiC"/>
+                        <outlet property="ScoreLabel" destination="7rg-nt-qxd" id="XSi-bu-2ED"/>
+                        <outlet property="WhiteButton1" destination="voG-79-yDD" id="JXx-X0-zi1"/>
+                        <outlet property="WhiteButton10" destination="eTk-wx-cbf" id="yrL-bS-kpI"/>
+                        <outlet property="WhiteButton11" destination="WYh-TI-xCY" id="JZe-th-UaB"/>
+                        <outlet property="WhiteButton12" destination="XGI-ZO-XZ9" id="IUu-jR-gMt"/>
+                        <outlet property="WhiteButton13" destination="C3a-mk-oRL" id="wO2-g4-6hp"/>
+                        <outlet property="WhiteButton14" destination="zQN-BM-D7y" id="Eyg-KS-440"/>
+                        <outlet property="WhiteButton16" destination="lJD-FU-VIW" id="f6V-Mh-HoF"/>
+                        <outlet property="WhiteButton17" destination="pAM-O7-WBI" id="h7b-XE-wFD"/>
+                        <outlet property="WhiteButton18" destination="zX5-na-LCj" id="M5I-BP-6cy"/>
+                        <outlet property="WhiteButton19" destination="L3N-Gt-cAY" id="Qxq-hC-caU"/>
+                        <outlet property="WhiteButton21" destination="HlF-CC-itt" id="DVq-Uq-EUZ"/>
+                        <outlet property="WhiteButton22" destination="gJc-Qk-oXC" id="4a5-RD-5Gf"/>
+                        <outlet property="WhiteButton24" destination="HNl-rs-ztm" id="EMD-bv-suj"/>
+                        <outlet property="WhiteButton25" destination="HA0-66-sha" id="X3N-0C-16d"/>
+                        <outlet property="WhiteButton27" destination="H0A-CF-AEq" id="OPo-Nk-N0v"/>
+                        <outlet property="WhiteButton28" destination="0gA-aE-sfP" id="Xly-6N-hvC"/>
+                        <outlet property="WhiteButton3" destination="qfn-nB-LHD" id="BHw-EB-tx5"/>
+                        <outlet property="WhiteButton4" destination="5bC-o1-80Q" id="dXJ-qk-U0h"/>
+                        <outlet property="WhiteButton5" destination="BH4-cb-piP" id="b3a-qZ-OTO"/>
+                        <outlet property="WhiteButton6" destination="SM7-uT-W4d" id="X0X-j7-BRi"/>
+                        <outlet property="WhiteButton7" destination="Ecf-kO-1MO" id="fj1-XP-RWm"/>
+                        <outlet property="labelFortimer" destination="49L-lA-LdY" id="SL2-hd-7aa"/>
+                        <outlet property="timercountDownlabel" destination="6k4-gT-bBl" id="tVr-X8-Lsh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zar-ci-vCs">
+            <objects>
+                <exit id="Yzg-4t-kYU" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ye-Uf-mtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewfromTimemode" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ley-oM-Plp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hx4-0z-EDB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-Ho-L1G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOZ-ba-dmL">
+                                <rect key="frame" x="76" y="735" width="263" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="61"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RestartButton:" destination="EPT-av-KVp" eventType="touchUpInside" id="1DR-CX-A9b"/>
+                                    <action selector="RestartButton:" destination="09Z-EB-HfC" eventType="touchUpInside" id="gxg-I8-JVs"/>
+                                    <action selector="restartButton2:" destination="Yzg-4t-kYU" eventType="touchUpInside" id="5NJ-mI-Ya7"/>
+                                    <segue destination="OKM-51-fdN" kind="presentation" modalPresentationStyle="fullScreen" id="1UE-Sg-E4r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBF-yq-d2A">
+                                <rect key="frame" x="28" y="104" width="359" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ucq-na-No4"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="-606.02678571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ooz-Qv-m8g">
+            <objects>
+                <viewController storyboardIdentifier="loseView" id="09Z-EB-HfC" customClass="ViewController" customModule="Pianino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ii7-IH-HKG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="WdX-hd-DYr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-nL-Ybl">
+                                <rect key="frame" x="28" y="104" width="359" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94X-hO-bgr">
+                                <rect key="frame" x="76" y="739" width="263" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="61"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RestartButton:" destination="09Z-EB-HfC" eventType="touchUpInside" id="5To-3Z-kwi"/>
+                                    <action selector="RestartButton:" destination="EPT-av-KVp" eventType="touchUpInside" id="rTY-XN-Hh2"/>
+                                    <segue destination="OKM-51-fdN" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="2e3-Ww-h7g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w4-hF-1kX">
+                                <rect key="frame" x="-3500" y="-3500" width="358" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <state key="normal" title="WATCH VIDEO &amp; CONTINUE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ContinueButton:" destination="09Z-EB-HfC" eventType="touchUpInside" id="Kno-FG-XUI"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="CYo-Yx-4QH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wiE-0W-CBr">
+                                <rect key="frame" x="20" y="336" width="374" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eac-73-hra">
+                                <rect key="frame" x="26" y="282" width="364" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <state key="normal" title="WATCH VIDEO  &amp; CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="WaitForButton:" destination="09Z-EB-HfC" eventType="touchUpInside" id="it8-5V-gyI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NAb-WW-srN"/>
+                    </view>
+                    <connections>
+                        <outlet property="GifImageView" destination="wiE-0W-CBr" id="KhF-Un-8gP"/>
+                        <outlet property="SecondButtomInModal" destination="7w4-hF-1kX" id="pCN-Xv-UBK"/>
+                        <outlet property="WaitForButtonButton" destination="eac-73-hra" id="2fw-20-o9n"/>
+                        <outlet property="secLifebutton" destination="7w4-hF-1kX" id="qDR-uy-IZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGK-1j-pDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="EPT-av-KVp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="118"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xez-CO-ZjB"/>
+        <segue reference="eWn-CG-Rny"/>
+        <segue reference="1UE-Sg-E4r"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+    <resources>
+        <image name="Background" width="828" height="1792"/>
+        <image name="ImageForButton" width="104" height="151"/>
+        <image name="memories.badge.plus" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
